@@ -54,7 +54,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  max-width: 100vw;
   position: relative;
   padding-bottom: 5vh;
   z-index: 0;
