@@ -1,0 +1,655 @@
+/* ------- All Pages ------- */
+
+@media screen and (max-width: 500px) {
+
+  .navigation {
+    display: none;
+  }
+
+  .maincontainer {
+    padding-bottom: 20%;
+  }
+
+  .headertwo {
+    margin-bottom: 10%;
+  }
+
+  .headerthree {
+    margin-bottom: 10%;
+  }
+
+  footer {
+    padding: 2% 3%;
+  }
+
+}
+
+
+/* -------- Home Page ------- */
+
+@media screen and (max-width: 500px) {
+
+/* Section One */
+
+  .bar-container {
+    display: block;
+  }
+
+  .d-bar-container {
+    display: none;
+  }
+
+  #header ,
+  #seg-one ,
+  #seg-two {
+    font-size: 2.6em;
+  }
+
+  #seg-three {
+    display: block;
+    text-align: right;
+  }
+
+  .partone p ,
+  .parttwo p {
+    font-size: 2.3em;
+  }
+
+  .partfour {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    display: block;
+    margin: 10% 0 5% 5%;
+    font-size: .6em;
+  }
+
+
+  /* Section Two */
+
+
+  .bartwo {
+    height: none;
+    padding: 5% 10%;
+  }
+
+  .bartwo li {
+    display: block;
+    width: 100%;
+    margin: 15% auto;
+  }
+
+  .bartwo p {
+    margin: auto;
+    margin-top: 0;
+    margin-top: 3%;
+  }
+
+  .imageholder {
+    width: 40%;
+    height: auto;
+  }
+
+  /* Section Three - Grid */
+
+  .grid {
+    grid-template: 40% 20% 20% 20% / 100%;
+  }
+
+  .one {
+    background-size: 90% auto;
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+
+  .two {
+    grid-area: 3 / 1 / span 1 / span 1;
+    background-image: url('../pictures/lips-2.png');
+    background-size: 90% auto;
+    min-height: 350px;
+    max-height: 400px;
+  }
+
+  .four {
+    grid-area: 4 / 1 / span 1 / span 1;
+    position: relative;
+    bottom: 20px;
+  }
+
+  /* Section Four */
+
+  .barthree img {
+    float: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .textcontainer {
+    float: none;
+  }
+
+  .sec-four-btn {
+    margin-left: 25%;
+  }
+
+  .textcontainer h1 {
+    text-align: right;
+    margin-top: 6%;
+  }
+
+}
+
+@media screen and (min-width: 500.1px) and (max-width: 900px) {
+
+  /* Section One */
+
+  #seg-three {
+    display: block;
+    text-align: right;
+  }
+
+}
+
+@media screen and (min-width: 500.1px) and (max-width: 880px) {
+
+  /* Section One */
+
+  .d-partone p {
+    font-size: 7em;
+  }
+
+  .parttwo {
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  #seg-two {
+    display: block;
+    text-align: right;
+  }
+
+  /* Section Two */
+
+  .imageholder {
+    max-width: 150px;
+  }
+
+  #point-three {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+  }
+
+  /* Section Three */
+
+  .grid {
+    grid-template: 40% 20% 20% 20% / 100%;
+  }
+
+  .one {
+    background-size: 80% auto;
+  }
+
+
+  .two {
+    grid-area: 3 / 1 / span 1 / span 1;
+    background-image: url('../pictures/lips-2.png');
+    background-size: auto 90%;
+  }
+
+  .four {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+
+
+
+  /* Section Four */
+
+  .barthree {
+    padding: 6% 6% 0 6%;
+  }
+
+  .barthree img {
+    float: none;
+    display: block;
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 5%;
+    margin-left: 0;
+  }
+
+  .textcontainer {
+    float: none;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .textcontainer p {
+    text-align: justify;
+  }
+
+  .textcontainer h1 {
+    margin-top: 6%;
+  }
+
+  .textcontainer .button {
+    margin: 0;
+    margin-top: 10%;
+}
+}
+
+@media screen and (min-width: 620.1px) and (max-width: 700px) {
+  .d-partone p {
+    font-size: 6em;
+  }
+}
+
+@media screen and (min-width: 500.1px) and (max-width: 620px) {
+
+  /* Navigation */
+
+  .mainlogo {
+    height: 70%;
+    min-height: 60px;
+  }
+
+  /* Section One */
+
+  .d-partone p {
+    font-size: 5.3em;
+  }
+
+  .d-parttwo p {
+    font-size: 1.5em;
+  }
+
+  .partone ,
+  .partfour {
+    font-size: .8em;
+  }
+
+  #inline {
+    font-size: 2.5em;
+  }
+
+  /* Section Three */
+
+  .one {
+    background-size: 80% auto;
+  }
+}
+
+/* ------ About 10Ray ------- */
+
+@media screen and (max-width: 500px) {
+
+  .about-10ray {
+    padding: 3% 10% 3% 10%;
+  }
+
+  .about-10ray-grid {
+    display: block;
+    grid-template: none;
+  }
+
+  .analytics ,
+  .social-media {
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 8%;
+  }
+
+  .about-10ray a {
+    text-decoration: none;
+  }
+
+  .d-two {
+    margin-bottom: 10%;
+  }
+
+  .l-one ,
+  .l-two {
+    font-weight: bold;
+  }
+
+}
+
+/* ------- About the Founder ------ */
+
+ @media screen and (max-width: 700px) {
+
+  #founder h1 {
+    margin-left: 0;
+    font-size: 2em;
+  }
+
+  .about-the-founder {
+    padding: 3% 10% 3% 10%;
+  }
+
+  .founder-image {
+    height: 30vw;
+    min-height: 220px;
+    width: 30vw;
+    min-width: 220px;
+    float: none;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+}
+
+/* ------- Analytics & Social Media Challenge ------- */
+
+  @media screen and (max-width: 500px) {
+
+    .analytics-challenge ,
+    .social-challenge {
+      padding: 3% 10% 3% 10%;
+    }
+
+  }
+
+  /* ------ Services ------- */
+
+    @media screen and (max-width: 500px) {
+
+      #services {
+        margin-bottom: 0;
+      }
+
+      .shortcut {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .shortcut li {
+        display: block;
+        float: none;
+      }
+
+      .shortcut a {
+        text-decoration: none;
+      }
+
+      .service p ,
+      .service ul ,
+      .service h3 ,
+      .service span {
+        margin-top: 5%;
+      }
+
+    }
+
+
+  /* ------- Pricing ------ */
+
+    @media screen and (max-width: 600px) {
+
+      .pricing {
+        padding: 0 10% 3% 10%;
+      }
+
+      .pricing-grid {
+        margin: 2% 10% 2% 10%;
+        grid-template: repeat(4, 1fr) / 50% 50%;
+      }
+
+      .pricing-grid h2 {
+        margin-top: 0;
+        margin-top: 10%;
+        font-size: 1.1em;
+      }
+
+      .right {
+        width: 100%;
+      }
+
+    }
+
+    @media screen and (min-width: 600.1px) and (max-width: 900px) {
+
+      .pricing-grid {
+        grid-template: repeat(4,1fr) / 50% 50%;
+      }
+
+    }
+
+    /* ------- Contact ------ */
+
+    @media screen and (max-width: 500px) {
+
+      .contact {
+        padding: 0 10% 3% 10%;
+      }
+
+      form {
+        margin-top: 8%;
+      }
+
+      fieldset input {
+        width: 85%;
+      }
+
+      .float-right {
+        padding-left: 5%;
+      }
+
+    }
+
+    /* ------- Benefits of Services ------- */
+
+    @media screen and (max-width: 500px) {
+
+      .benefits h1 {
+        font-size: 2em;
+      }
+
+      .row {
+        margin: 3% 10% 3% 10%;
+      }
+
+      .left ,
+      .right ,
+      .image ,
+      .image-right {
+        display: block;
+        float: none;
+      }
+
+      .image ,
+      .image-right {
+        margin: 3% auto;
+        width: 60%;
+        height: auto;
+      }
+
+      .left ,
+      .right {
+        float: none;
+        width: 100%;
+      }
+
+      .left h2 ,
+      .right h2 {
+        margin-top: 5%;
+      }
+
+    }
+
+    /* ------- Who 10Ray Helps ------- */
+
+    @media screen and (max-width: 500px) {
+
+      .helps {
+        padding: 0 10% 3% 10%;
+      }
+
+      .helps h3 {
+        margin-top: 10%;
+      }
+
+      .helps h2 {
+        margin-top: 20%;
+      }
+
+    }
+
+    /* ------ Is 10Ray Right for You ------- */
+
+    @media screen and (max-width: 500px) {
+
+      .no-thrills-header {
+        margin-bottom: 10%;
+      }
+
+      .s-one ,
+      .s-two ,
+      .s-three {
+        width: 80%;
+      }
+
+      .s-four {
+        width: 90%;
+      }
+
+      .s-one-image ,
+      .s-three-image {
+        width: 45%;
+      }
+
+      .s-two-image {
+        margin-left: 38%;
+      }
+
+      #s-four-analytics ,
+      #s-four-social-media {
+        font-size: 1.5em;
+        width: 46%;
+      }
+
+      #s-four-analytics {
+        margin-left: 3%;
+      }
+
+      #s-four-social-media {
+        float: right;
+      }
+
+      .s-five ,
+      .s-six {
+        width: 80%;
+      }
+
+      .s-five ol ,
+      .s-six ol {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+    }
+
+    @media screen and (min-width: 800.1px) and (max-width:1200px) {
+
+      .s-one ,
+      .s-two ,
+      .s-three {
+        width: 60%;
+      }
+
+      .s-four {
+        width: 60%;
+      }
+
+      .s-one-image ,
+      .s-three-image {
+
+      }
+
+      .s-two-image {
+        margin-left: 38%;
+      }
+
+      #s-four-analytics ,
+      #s-four-social-media {
+
+        width: 46%;
+      }
+
+      #s-four-social-media {
+        float: right;
+      }
+
+      .s-five ,
+      .s-six {
+        width: 60%;
+      }
+    }
+
+    @media screen and (min-width: 500.1px) and (max-width:799.9px) {
+
+      .s-one ,
+      .s-two ,
+      .s-three {
+        width: 70%;
+      }
+
+      .s-four {
+        width: 70%;
+      }
+
+      .s-one-image ,
+      .s-three-image {
+
+      }
+
+      .s-two-image {
+        margin-left: 38%;
+      }
+
+      #s-four-analytics ,
+      #s-four-social-media {
+        font-size: 1.5em;
+        width: 46%;
+      }
+
+      #s-four-social-media {
+        float: right;
+      }
+
+      .s-five ,
+      .s-six {
+        width: 70%;
+      }
+    }
+
+
+  /* ------- Article ------- */
+
+  @media screen and (max-width: 500px) {
+
+    .headerarticle {
+      margin-bottom: 5%;
+    }
+
+    .large-center-image {
+      width: 90%;
+      height: auto;
+    }
+
+    .article-width {
+      width: 80%;
+    }
+
+    .article-width h4 {
+      margin-top: 5%;
+    }
+  }

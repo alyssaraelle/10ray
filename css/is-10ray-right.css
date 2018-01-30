@@ -1,0 +1,118 @@
+/* ------ Is 10Ray Right for You? ------- */
+
+p ,
+li ,
+h2 {
+  color: rgb(250,250,250);
+}
+
+ol {
+  margin-bottom: 2%;
+}
+
+li {
+  font-size: 1.5em;
+}
+
+a {
+  color: rgb(244,221,210);
+}
+
+h2 {
+  width: 49.7%;
+  display: inline-block;
+}
+
+#is-10ray-right-background {
+  background-image: url("../pictures/gradient_mixed_large.jpg");
+  background-repeat: none;
+}
+
+.no-thrills-header {
+  text-align: center;
+}
+
+.no-thrills-header h1 {
+  color: rgb(250,250,250);
+}
+
+.s-one ,
+.s-three {
+  width: 50%;
+  margin: auto;
+  margin-top: 4%;
+  list-style-position: inside;
+  text-align: justify;
+}
+
+.s-one-image {
+  width: 25%;
+  height: auto;
+  margin: 3% auto;
+}
+
+.s-two {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+}
+
+.s-two-image {
+  margin: 3% 0 0 42%;
+  width: 25vh;
+  height: 20vh;
+}
+
+.s-three {
+  margin-top: 1% !important;
+}
+
+.s-three-image {
+  width: 25%;
+  height: auto;
+  margin: auto;
+}
+
+.s-four {
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+#s-four-analytics ,
+#s-four-social-media {
+  font-size: 2em;
+}
+
+#s-four-analytics:hover ,
+#s-four-social-media:hover {
+  cursor: pointer;
+  text-shadow: 0 0 1em rgb(250,250,250);
+}
+
+#s-four-analytics {
+  border-right: 2px solid rgb(250,250,250);
+}
+
+#s-four-social-media {
+  text-align: right;
+}
+
+.s-five ,
+.s-six {
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+  list-style-position: inside;
+  display: none;
+}
+
+.s-five li ,
+.s-six li {
+  font-size: 1.2em !important;
+}
+
+.yes ,
+.no {
+  color: rgb(126,250,133);
+}

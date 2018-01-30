@@ -1,0 +1,1054 @@
+/* ------- CSS Adjustments -----*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------- Fonts ------- */
+
+@font-face {
+  font-family: "Beon";
+  src: url(../fonts/Beon-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v11/bYbkq2nU2TSx4SwFbz5sCBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v8/DsLzC9scoPnrGiwYYMQXpiXGGgjhbil4nYG1ct5o924.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Khula Regular'), local('Khula-Regular'), url(https://fonts.gstatic.com/s/khula/v3/o75qJfGxtQmF0aLh4-Fr5qCWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Encode Sans Semi Expanded';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Encode Sans Semi Expanded Black'), local('EncodeSansSemiExpanded-Black'), url(https://fonts.gstatic.com/s/encodesanssemiexpanded/v2/CzlMbAciMXgtU6UUaNDI4sIOIZ6BsfRi1i9aEyUWch6I6GMN2E8pLQgnq_4pTpYR.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* ------- Multiple Pages ------- */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  padding-bottom: 5vh;
+  z-index: 0;
+  background-color: rgb(250,250,250);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  color: rgb(116,116,116);
+  letter-spacing: .1em;
+  font-size: 2.5em;
+}
+
+p , h2 , h3 , li , span {
+  font-family: "Khula", sans-serif;
+  font-size: .9em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+  color: rgb(244,167,135);
+}
+
+a {
+  color: rgb(3,223,254);
+}
+
+.maincontainer{
+  flex: 1;
+  padding-bottom: 6%;
+}
+
+footer {
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid rgb(16,8,24);
+  background-color: white;
+  padding: 0.8% 3%;
+  text-align: center;
+  font-size: .9em;
+}
+
+footer a {
+  color: rgb(20,20,20);
+}
+
+footer span {
+  float: right;
+  font-size: 1em;
+}
+
+/* ------- Mobile Navigation ------- */
+
+.mobile-nav {
+  display: none;
+  height: 100px;
+  width: 100%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.mobile-logo {
+  width: 110px;
+  height: auto;
+  float: left;
+}
+
+.menu-icon {
+  float: right;
+  text-align: right;
+  padding-right: 8%;
+  margin-top: 5%;
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+.mobile-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-icon img {
+  width: auto;
+  height: 100%;
+}
+
+.mobile-dropdown {
+  display: none;
+  border-radius: 2%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.mobile-dropdown ul {
+  list-style: none;
+}
+
+#mobile-homepage li {
+  color: rgb(250,227,179);
+  border: 1px solid rgb(250,250,250);
+}
+
+.mobile-dropdown li {
+  color: rgb(116,116,116);
+  border: 1px solid rgb(244,221,210);
+}
+
+.mobile-dropdown a {
+  display: block;
+  text-decoration: none;
+  color: rgb(20,20,20);
+}
+
+.mobile-dropdown a ,
+.mobile-dropdown li {
+  margin: 3%;
+  font-family: "Khula" , sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.mobile-dropdown a:hover ,
+.mobile-dropdwon a:active {
+  background-color: rgb(250, 227, 179);
+}
+
+.about-drop ,
+.services-drop ,
+.contact-drop {
+  display: none;
+}
+
+
+
+/* ------- Desktop & Tablet Navigation ------ */
+
+.navigation {
+  height: 90px;
+  width: 100%;
+  display: auto;
+  position: fixed;
+  top: 0;
+  background-image: url("../pictures/gradient_mixed.jpg");
+  box-shadow: 0 0 1em rgb(116,116,116);
+}
+
+.mainlogo {
+  height: 80%;
+  min-height: 60px;
+  width: auto;
+  display: inline;
+  float: left;
+  margin-left: .5%;
+  margin-top: 5px;
+}
+
+.color {
+  color: rgb(250,250,250) !important;
+}
+
+#homepage {
+  background-image: none;
+  box-shadow: none;
+}
+
+#homepage .mainlogo {
+  height: 90%;
+}
+
+#tenray-right {
+  background-color:inherit;
+}
+
+.navlist {
+  text-align: right;
+  padding-right: 1%;
+  height: 100%;
+}
+
+#menu-about:hover ,
+#menu-services:hover {
+  cursor: default;
+}
+
+.dropdown {
+  display: inline-block;
+  z-index: 2;
+  margin-right: 30px;
+  text-align: left;
+}
+
+.dropdown p {
+  height: 69px;
+  padding-top: 40px;
+  display: inline-block;
+  font-family: "Archivo Narrow", sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: rgb(250, 250, 250);
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+
+.dropdown-content {
+  background-color: rgb(250,250,250);
+  text-align: left;
+  min-width: 200px;
+  position: absolute;
+  display: none;
+  width: 17%;
+}
+
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  height: 5vh;
+  min-height: 20px;
+  min-width: 17%;
+  padding: 5% 3% 0% 2%;
+  color: rgb(20,20,20);
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(250, 227, 179);
+}
+
+.dropdown p:hover {
+  border-bottom: 3px solid rgb(244,221,210);
+}
+
+
+/* ------- Headers & Buttons ------ */
+
+.headertwo {
+  text-align: center;
+  padding: 1% 0;
+  background-color: rgb(244,221,210);
+}
+
+.headerthree {
+  text-align: left;
+  margin-left: 15%;
+  padding: 1% 0;
+  padding-left: 5%;
+  background-color: rgb(244,221,210);
+}
+
+.button {
+  margin-top: 2%;
+  padding: 2% 5% 2% 5%;
+  border-radius: 5%;
+  display: inline-block;
+  font-size: 1em;
+  border: 2px solid rgb(20,20,20);
+  color: rgb(20,20,20);
+  background-color: rgb(250,250,250);
+}
+
+.button:hover {
+  background-color: rgb(141,141,141);
+  color: rgb(250,250,250);
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* ------ Adjustments ------- */
+
+.center {
+  text-align: center;
+}
+
+.empty-space-home {
+  height: 95px;
+  width: 100%;
+}
+
+.empty-space {
+  height: 6vh;
+  min-height: 90px;
+  width: 100%;
+}
+/* ------- Home Page ------- */
+
+/* Section One */
+
+.bar-container {
+  display: none;
+}
+
+.d-bar-container {
+  text-align: left;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 5vw;
+}
+
+.d-partone p {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 8em;
+  color: rgb(250,250,250);
+}
+
+.d-parttwo p {
+  font-family: ;
+  font-size: 2em;
+  color: rgb(250,250,250);
+  margin-top: 1%;
+}
+
+#no-margin {
+  padding: 0;
+  padding-bottom: 6%;
+}
+
+.bar {
+  min-height: 95vh;
+  text-align: center;
+  font-weight: bold;
+  background-image: url("../pictures/gradient_mixed.jpg");
+  background-size: 100% 100%;
+  overflow: auto;
+}
+
+.bar-container {
+  padding-left: 8vw;
+  padding-right: 5vw;
+  padding-bottom: 5vw;
+}
+
+.bar-container p {
+  font-size: 3em;
+  color: rgb(250,250,250);
+}
+
+.partone {
+  text-align: left;
+}
+
+.parttwo {
+  text-align: right;
+  margin-right: 5%;
+  margin-bottom: 8%;
+}
+
+.parttwo h1 {
+  font-family: 'Khula', sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  color: rgb(250,250,250);
+  display: inline;
+  letter-spacing: 0;
+}
+
+
+#seg-three {
+  display: inline-block;
+  margin-left: 1%;
+}
+
+.barbtn {
+  position: relative;
+  top: 72%;
+  text-transform: uppercase;
+  margin-top: 3%;
+  font-size: 1.2em;
+}
+
+/* Section Two */
+
+.bartwo {
+  padding: 5%;
+}
+
+.bartwo ul {
+  width: 100%;
+  text-align: center;
+}
+
+.bartwo li {
+  display: table-cell;
+  width: 33%;
+  padding: 2% 5%;
+}
+
+.bartwo p {
+  margin-top: 8%;
+  font-size: 1em;
+}
+
+.imageholder {
+  width: 60%;
+  min-width: 150px;
+  height: auto;
+  margin: auto;
+}
+
+.imageholder img {
+  object-fit: contain;
+}
+
+/* Section Three */
+
+.grid {
+  display: grid;
+  grid-template: 80% 20% / 50% 50%;
+
+}
+
+.one {
+  grid-area: 1 / 1 / span 1 / span 1;
+  min-height: 500px;
+  background-image: url("../pictures/tablet_charts_blur.png");
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-color: rgb(244,221,210);
+}
+
+.two {
+  grid-area: 1 / 2 / span 1 / span 1;
+  min-height: 500px;
+  background-image: url("../pictures/lips-2.png");
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: rgb(250,227,179);
+
+}
+
+.three {
+  grid-area: 2 / 1 / span 1 / span 1;
+  text-align: center;
+  background-color: rgb(244,221,210);
+}
+
+.four {
+  grid-area: 2 / 2 / span 1 / span 1;
+  text-align: center;
+  background-color: rgb(250,227,179);
+}
+
+.three h2 ,
+.four h2 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+
+.halfone ,
+.halftwo {
+  margin-bottom: 7%;
+  margin-top: 0;
+  padding: 2% 0 !important;
+}
+
+.halfone p ,
+.halftwo p {
+  display: inline;
+}
+
+.halfone img ,
+.halftwo img {
+  width: 13%;
+  height: auto;
+  float: right;
+  margin-right: 15%;
+}
+
+.halftwo ,
+.halfone {
+  border-color: rgb(237,13,27) !important;
+}
+
+.halftwo:hover ,
+.halfone:hover {
+  color: rgb(250,250,250);
+  background-image: url("../pictures/light_red_gradient.jpg") !important;
+}
+
+/* Section Four */
+
+.barthree {
+  padding: 6% 4% 0 6%;
+}
+
+.barthree p {
+  font-size: 1em;
+}
+
+.barthree img {
+  height: 90%;
+  width: 45%;
+  float: right;
+  clear: none;
+}
+
+.textcontainer {
+  float: left;
+  display: inline;
+  max-width: 50%;
+}
+
+.sec-four-btn {
+  width: 170px;
+  height: auto;
+  text-align: center;
+  margin: 8%;
+  margin-left: 33%;
+}
+
+.sec-four-btn p {
+  text-align: center;
+  display: inline;
+}
+
+#future {
+  margin-bottom: 6%;
+  font-size: 1.8em;
+}
+
+
+/* ------- About the Founder Page ------- */
+
+.about-the-founder {
+  text-align: center;
+  padding: 4% 15% 3% 15%;
+  margin-bottom: 5%;
+}
+
+.about-the-founder p {
+  margin-left: 3%;
+  overflow: auto;
+  display: block;
+  text-align: justify;
+}
+
+.founder-image {
+  height: 18vw;
+  min-height: 220px;
+  width: 18vw;
+  min-width: 220px;
+  border: 1px solid black;
+  border-radius: 50%;
+  float: left;
+  clear: both;
+  margin: 0 4% 4% 0;
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ------- About 10Ray Page ------- */
+
+.about-10ray {
+  text-align: justify;
+  padding: 2% 20% 5% 20%;
+}
+
+.about-10ray p {
+  margin: 2% 0;
+}
+
+.about-10ray-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / 20% 80%;
+}
+
+.l-one p ,
+.l-two p {
+  margin-top: 10%;
+}
+
+.analytics ,
+.social-media {
+  display: inline-block;
+  text-align: center;
+  margin-top: 4%;
+  width: 45%;
+  height: 80px;
+  font-size: 1.5em;
+}
+
+.analytics {
+  float: left;
+}
+
+.social-media {
+  float: right;
+  border-color: rgb(237,13,27) !important;
+}
+
+.social-media:hover {
+  background-image: url("../pictures/light_red_gradient.jpg") !important;
+}
+
+.analytics p ,
+.social-media p {
+  text-transform: uppercase;
+}
+
+/* ------- The Analytics Challenge Page ------- */
+
+.analytics-challenge {
+  margin-top: 5%;
+  padding: 0 20% 5% 20%;
+}
+
+.analytics-challenge p {
+  margin-top: 3%;
+}
+
+.analytics-challenge h2 {
+  margin-top: 5%;
+}
+
+/* ------- The Social Media Challenge Page ------- */
+
+.social-challenge {
+  margin-top: 5%;
+  padding: 0 20% 5% 20%;
+  list-style-position: inside;
+}
+
+.social-challenge p  {
+  margin-top: 3%;
+}
+
+.social-challenge h2 {
+  margin-top: 5%
+}
+
+.social-challenge ol ,
+.social-challenge li {
+  margin-top: 3%;
+  font-size: 1em;
+}
+
+.social-challenge li:hover {
+  cursor: pointer;
+}
+
+.answer {
+  display:none;
+}
+
+.question {
+  color: rgb(244,167,135);
+}
+
+/* ------- Services Page ------- */
+
+#services {
+  padding-bottom: 1%;
+}
+
+.headerfour {
+  margin-left: 35%;
+  background-color: white;
+  border-left: 1px solid rgb(20,20,20);
+  border-bottom: 1px solid rgb(20,20,20);
+}
+
+.menu {
+  overflow: auto;
+}
+
+.shortcut li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgb(116,116,116);
+  float: right;
+  margin: 1% 6%;
+  font-size: .9em;
+}
+
+.services {
+  margin-bottom: 5%;
+}
+
+.service {
+  margin: 8% 10% 3% 10%;
+  display: block;
+  list-style-position: inside;
+  text-align: justify;
+  overflow: auto;
+  border: 1px solid rgb(20,20,20);
+}
+
+.service p,
+.service h2,
+.service h3,
+.service ul {
+  margin-top: 2%;
+  margin-left: 9%;
+  margin-right: 8%;
+}
+
+.service h2 {
+  margin-top: 7%;
+}
+
+.service span {
+  text-transform: uppercase;
+  float: right;
+  display: inline-block;
+  margin-top: 1%;
+  margin-bottom: 6%;
+  margin-right: 6%;
+  overflow: auto;
+}
+
+#strategy-service ,
+#takeover-service ,
+#social-service {
+  display: none;
+}
+
+#analytics-link {
+  text-decoration: underline;
+}
+
+/* -----Anchor for services for link jumps------
+
+.anchor {
+  display: block;
+  height: 7vh;
+  margin-top: -7vh;
+  visibility: hidden;
+}
+
+*/
+
+
+
+/* ------- Benefits: Analytics & Social Media Pages ------- */
+
+.benefits-analytics ,
+.benefits-social {
+  margin-top: 8%;
+}
+
+.benefits-analytics .button ,
+.benefits-social .button {
+  margin-top: 3%;
+}
+
+.row {
+  margin: 5% 12% 0 12%;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.left,
+.right,
+.image {
+  display: inline;
+}
+
+.left p,
+.right p {
+  margin-top: 3%;
+}
+
+.image ,
+.image-right {
+  width: 20vw;
+  min-width: 200px;
+  height: auto;
+}
+
+.image img ,
+.image-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  float: left;
+  margin: 0 5% 1% 0;
+}
+
+.image-right {
+  float: right;
+  margin: 0 0 1% 5%;
+}
+
+/* ------- Who 10Ray Helps Page ------- */
+
+.helps {
+  padding: 5% 20% 5% 20%;
+  list-style-position: inside;
+}
+
+.helps ul,
+.helps p {
+  margin: 3% 0;
+}
+
+.helps li {
+  font-size: 1em;
+}
+
+/* ------ Pricing Page ------- */
+
+.pricing {
+  padding: 0 20% 0 20%;
+  margin-bottom: 2%;
+}
+
+.pricing p {
+  margin-top: 5%;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 70% 30%;
+  margin: 2% 20% 2% 20%;
+}
+
+.pricing-grid h2 {
+  margin-top: 3%;
+}
+
+.odd,
+.even {
+  border-bottom: 1px solid rgb(20,20,20);
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+
+.odd p {
+  color: rgb(244,167,135);
+}
+
+.odd a {
+  text-decoration: none;
+}
+
+.odd a:hover {
+  text-decoration: underline;
+  color: rgb(20,20,20);
+}
+
+.even {
+  text-align: right;
+  padding-top: 40px;
+}
+
+.even a {
+  margin-top: 30px;
+}
+
+.top {
+  margin-top: 3%;
+}
+
+.bottom {
+  margin-bottom: 1%;
+}
+
+.solo {
+  margin-top: 6%;
+}
+
+.pricing-grid .button {
+  margin-top: 7%;
+  margin-bottom: 0;
+  padding: 5%;
+  text-decoration: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* ------- Contact Page -------- */
+
+.contact {
+  padding: 3% 18% 5% 20%;
+}
+
+.contact p {
+  margin-top: 2%;
+}
+
+form {
+  margin-top: 3%;
+}
+
+input {
+  font-size: 1em;
+  width: 30%;
+}
+
+input[type=submit] {
+  margin-top: 5%;
+  padding: 1% 0;
+}
+
+fieldset {
+  width: 49%;
+  border: none;
+  display: inline-block;
+}
+
+fieldset input {
+  width: 80%;
+}
+
+select {
+  width: 80%;
+  min-height: 30px;
+  height: 2vw;
+}
+
+select:focus {
+  outline:none;
+}
+
+input:focus {
+  border: 3px solid rgb(244,221,210);
+  outline: none;
+}
+
+#subject {
+  width: 100%;
+}
+
+#message {
+  width: 100%;
+  font-size: 1em;
+  height: 15vw;
+}
+
+#validation {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+.float-right {
+  padding-left: 10%;
+}
+
+.float-right input {
+  width: 100%;
+}
+
+.float-right select {
+  width: 100%;
+}
+
+/* ------- Privacy Policy & Terms of Use ------- */
+
+.privacy-policy ,
+.terms-of-use {
+  padding: 3% 10% 3% 10%;
+}
+
+.privacy-policy p ,
+.terms-of-use p {
+  margin: 5% auto;
+}
+
+.terms-of-use h3 {
+  color: rgb(20,20,20);
+}
