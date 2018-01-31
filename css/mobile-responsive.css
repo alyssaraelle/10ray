@@ -38,17 +38,13 @@
 
 @media screen and (max-width: 390px) {
 
-  .parttwo h1 {
-    font-size: 2.8em;
-  }
-
   .partfour p {
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 390.1px) and (max-width: 500px) {
 
 /* Section One */
 
