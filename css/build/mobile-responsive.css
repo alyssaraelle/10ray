@@ -39,7 +39,7 @@
 @media screen and (max-width: 390px) {
 
   .partfour p {
-    font-size: 1.4em;
+    font-size: 1.4em !important;
   }
 
 }
