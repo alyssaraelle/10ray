@@ -42,8 +42,8 @@
     font-size: 2.8em;
   }
 
-  .partfour {
-    font-size: .4em;
+  .partfour p {
+    font-size: 1.4em;
   }
 
 }
@@ -86,7 +86,10 @@
     top: 20px;
     display: block;
     margin: 10% 0 5% 0;
-    font-size: .6em;
+  }
+
+  .partfour p {
+    font-size: 2em;
   }
 
 
