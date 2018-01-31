@@ -22,10 +22,31 @@
     padding: 2% 3%;
   }
 
+  /* Adjustments */
+
+  .empty-space-home {
+    height: 85px;
+    width: 100%;
+  }
+
 }
 
 
+
+
 /* -------- Home Page ------- */
+
+@media screen and (max-width: 390px) {
+
+  .parttwo h1 {
+    font-size: 2.8em;
+  }
+
+  .partfour {
+    font-size: .5em;
+  }
+
+}
 
 @media screen and (max-width: 500px) {
 
@@ -39,13 +60,19 @@
     display: none;
   }
 
-  #seg-one {
-    font-size: 2.6em;
+  #seg-two {
+    display: inline-block;
   }
 
   #seg-three {
     display: block;
     text-align: right;
+  }
+
+  .parttwo h1 {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 3em;
+    color: rgb(250,227,179);
   }
 
   .partone p ,
