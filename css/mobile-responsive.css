@@ -381,6 +381,10 @@
       padding: 3% 10% 3% 10%;
     }
 
+    .social-challenge h1 {
+      font-size: 2.1em;
+    }
+
     .social-challenge li {
       margin: 6% auto;
     }
@@ -529,7 +533,7 @@
       .helps-header h1 {
         font-size: 2em;
       }
-      
+
       .helps {
         padding: 0 10% 3% 10%;
       }
