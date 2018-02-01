@@ -553,7 +553,7 @@ footer span {
 .halfone:hover {
   color: rgb(250,250,250);
   background-image: url("../pictures/light_red_gradient.jpg") !important;
-  background-color: inherit !important;
+  background-color: rgb(245,161,167) !important;
 }
 
 /* Section Four */
