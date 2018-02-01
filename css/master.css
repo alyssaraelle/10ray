@@ -195,9 +195,12 @@ footer span {
   cursor: pointer;
 }
 
-.mobile-dropdown a:hover ,
-.mobile-dropdwon a:active {
+.mobile-dropdown a:hover {
   background-color: rgb(250, 227, 179);
+}
+
+html.can-touch .mobile-dropdown a:hover {
+  background-color: none;
 }
 
 .about-drop ,

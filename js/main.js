@@ -1,5 +1,15 @@
 $(document).ready(() => {
 
+  // Check for Touch Device
+
+    document.addEventListener('touchstart', addTouchClass(e)=> {
+    document.documentElement.classList.add('can-touch');
+    document.removeEventListener('touchstart', addTouchClass, false)
+    }, false);
+
+
+  // Check Screen Size
+
   checkScreenSize();
 
   $(window).resize(function() {
