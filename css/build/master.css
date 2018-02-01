@@ -200,12 +200,8 @@ footer span {
   cursor: pointer;
 }
 
-.mobile-dropdown a:hover {
+.mobile-dropdown a{
   background-color: rgb(250, 227, 179);
-}
-
-html.can-touch .mobile-dropdown a:hover {
-  background-color: none;
 }
 
 .about-drop ,
@@ -716,6 +712,10 @@ html.can-touch .mobile-dropdown a:hover {
   list-style-position: inside;
 }
 
+.social-challenge h1 {
+  font-size: 2.3em;
+}
+
 .social-challenge p  {
   margin-top: 3%;
 }
@@ -792,6 +792,7 @@ html.can-touch .mobile-dropdown a:hover {
 
 .service h2 {
   margin-top: 7%;
+  text-align: left;
 }
 
 .service span {

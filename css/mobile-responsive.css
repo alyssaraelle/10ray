@@ -381,9 +381,15 @@
       padding: 3% 10% 3% 10%;
     }
 
+    .social-challenge li {
+      margin: 6% auto;
+    }
+
   }
 
-  /* ------ Services ------- */
+
+
+/* ------ Services ------- */
 
     @media screen and (max-width: 500px) {
 
@@ -416,6 +422,12 @@
 
 
   /* ------- Pricing ------ */
+
+    @media screen and (max-width: 390px) {
+      .even p {
+        font-size: .8em !important;
+      }
+    }
 
     @media screen and (max-width: 600px) {
 
@@ -514,6 +526,10 @@
 
     @media screen and (max-width: 500px) {
 
+      .helps-header h1 {
+        font-size: 2em;
+      }
+      
       .helps {
         padding: 0 10% 3% 10%;
       }
