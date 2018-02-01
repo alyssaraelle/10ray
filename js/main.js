@@ -74,7 +74,7 @@ $(document).ready(() => {
           () => {
             let currentTop = $(window).scrollTop();
             let screenWidth = $(window).width();
-            let headerHeight = 10.53;
+            let headerHeight = 40;
             if(($(window).scrollTop() > headerHeight) && (screenWidth <= 500) ) {
                 $('.mobile-nav').slideUp('slow');
               }
