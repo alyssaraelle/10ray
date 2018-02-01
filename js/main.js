@@ -24,6 +24,24 @@ $(document).ready(() => {
       $('.mobile-nav').hide();
       $('.navigation').show();
 
+      // Homepage Hover Interactions
+
+      $('.halfone').on('mouseenter', () => {
+        $('.one').css('background-image', 'url(pictures/tablet_charts.png)');
+      });
+
+      $('.halfone').on('mouseleave', () => {
+        $('.one').css('background-image', 'url(pictures/tablet_charts_blur.png)');
+      })
+
+      $('.halftwo').on('mouseenter', () => {
+        $('.two').css('background-image', 'url(pictures/lips.gif)');
+      });
+
+      $('.halftwo').on('mouseleave', () => {
+        $('.two').css('background-image', 'url(pictures/lips-2.png)');
+      })
+
       // Navigation Scroll
 
       $(window).scroll(
@@ -110,15 +128,8 @@ $(document).ready(() => {
   });
 
 
-  // Homepage Hover & Click Interactions
+  // Homepage Click Interactions
 
-  $('.halfone').on('mouseenter', () => {
-    $('.one').css('background-image', 'url(pictures/tablet_charts.png)');
-  });
-
-  $('.halfone').on('mouseleave', () => {
-    $('.one').css('background-image', 'url(pictures/tablet_charts_blur.png)');
-  })
 
   $('.halfone').on('click touch'), () => {
     ga('send', {
@@ -128,14 +139,6 @@ $(document).ready(() => {
       eventLabel: 'Homepage Analytics Benefits'
     });
   }
-
-  $('.halftwo').on('mouseenter', () => {
-    $('.two').css('background-image', 'url(pictures/lips.gif)');
-  });
-
-  $('.halftwo').on('mouseleave', () => {
-    $('.two').css('background-image', 'url(pictures/lips-2.png)');
-  })
 
   $('.halftwo').on('click touch'), () => {
     ga('send', {
