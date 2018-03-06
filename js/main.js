@@ -124,20 +124,16 @@ $(document).ready(() => {
 
 
   $('.halfone').on('click touch'), () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Homepage Analytics Benefits'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Homepage Analytics Benefits'
     });
   }
 
   $('.halftwo').on('click touch'), () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Homepage Social Media Benefits'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Homepage Social Media Benefits'
     });
   }
 
@@ -148,11 +144,9 @@ $(document).ready(() => {
     $('#s-four-analytics').css('text-decoration', 'underline');
     $('.s-six').slideUp('slow');
     $('.s-five').slideToggle();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Show',
-      eventAction: 'Click',
-      eventLabel: 'Chose Analytics'
+    gtag('event', 'Click', {
+      'event_category': 'Show',
+      'event_label': 'Chose Analytics'
     });
   });
 
@@ -162,11 +156,9 @@ $(document).ready(() => {
     $('#s-four-social-media').css('text-decoration', 'underline');
     $('.s-five').slideUp('slow');
     $('.s-six').slideToggle();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Show',
-      eventAction: 'Click',
-      eventLabel: 'Chose Social Media'
+    gtag('event', 'Click', {
+      'event_category': 'Show',
+      'event_label': 'Chose Social Media'
     });
   });
 
@@ -176,11 +168,9 @@ $(document).ready(() => {
 
   $('.question').on('click touch', (event) => {
     $(event.currentTarget).siblings().toggle();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Show',
-      eventAction: 'Click',
-      eventLabel: event.currentTarget.id
+    gtag('event', 'Click', {
+      'event_category': 'Show',
+      'event_label': event.currentTarget.id
     });
   })
 
@@ -192,11 +182,9 @@ $(document).ready(() => {
     $('#analytics-link').css('text-decoration', 'underline');
     $('.service').hide();
     $('#analytics-service').show();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Internal Link',
-      eventAction: 'Click',
-      eventLabel: 'Services - Analytics'
+    gtag('event', 'Click', {
+      'event_category': 'Internal Link',
+      'event_label': 'Services - Analytics'
     });
   })
 
@@ -205,11 +193,9 @@ $(document).ready(() => {
     $('#strategy-link').css('text-decoration', 'underline');
     $('.service').hide();
     $('#strategy-service').show();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Internal Link',
-      eventAction: 'Click',
-      eventLabel: 'Services - Analytics Strategy'
+    gtag('event', 'Click', {
+      'event_category': 'Internal Link',
+      'event_label': 'Services - Analytics Strategy'
     });
   })
 
@@ -218,11 +204,9 @@ $(document).ready(() => {
     $('#social-link').css('text-decoration', 'underline');
     $('.service').hide();
     $('#social-service').show();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Internal Link',
-      eventAction: 'Click',
-      eventLabel: 'Services - Social Media'
+    gtag('event', 'Click', {
+      'event_category': 'Internal Link',
+      'event_label': 'Services - Social Media'
     });
   })
 
@@ -231,85 +215,67 @@ $(document).ready(() => {
     $('#posts-link').css('text-decoration', 'underline');
     $('.service').hide();
     $('#takeover-service').show();
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Internal Link',
-      eventAction: 'Click',
-      eventLabel: 'Services - Social Media Takeover'
+    gtag('event', 'Click', {
+      'event_category': 'Internal Link',
+      'event_label': 'Services - Social Media Takeover'
     });
   })
 
   // Additional GA Tracks
 
   $('.future-button').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Article - The Future'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Article - The Future'
     });
   })
 
   $('.analytics').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'About - Analytics'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'About - Analytics'
     });
   })
 
   $('.social-media').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'About - Social Media'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'About - Social Media'
     });
   })
 
   $('.b-a').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Benefits Analytics - Services'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Benefits Analytics - Services'
     });
   })
 
   $('.b-sm').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Benefits Social Media - Services'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Benefits Social Media - Services'
     });
   })
 
   $('.helps-button').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Helps - About'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Helps - About'
     });
   })
 
   $('.book').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Button',
-      eventAction: 'Click',
-      eventLabel: 'Book Initial Consult'
+    gtag('event', 'Click', {
+      'event_category': 'Button',
+      'event_label': 'Book Initial Consult'
     });
   })
 
   $('.submit').on('click touch', () => {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Form',
-      eventAction: 'Click',
-      eventLabel: 'Submit'
+    gtag('event', 'Click', {
+      'event_category': 'Form',
+      'event_label': 'Submit'
     });
   })
 
