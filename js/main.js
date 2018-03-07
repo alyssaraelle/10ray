@@ -279,4 +279,6 @@ $(document).ready(() => {
     });
   })
 
+  amplitude.getInstance().logEvent('Test');
+
 });
