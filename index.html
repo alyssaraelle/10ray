@@ -16,8 +16,14 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#00d1fb">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113134634-1"></script>
-    <script src='js/gtag.js'></script>
-    <script src='js/amplitude.js'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113134634-1');
+    </script>
   </head>
   <body>
     <header>
@@ -90,7 +96,7 @@
           </div>
           <div class="d-bar-container">
             <div class="d-partone">
-              <p>10Ray Consulting</p>
+              <p>10Ray<br>Consulting</p>
             </div>
             <div class="d-parttwo">
               <p>Helping you build a foundation for your Analytics & Social Media Strategy</p>
@@ -167,8 +173,16 @@
             </a>
           </div>
         </div>
+        <div class="barclients">
+          <h3>Some of Our Clients</h3>
+          <div class="client-logos-container">
+            <img src="pictures/swaje.png" alt="SWAJE">
+            <img src="pictures/torch-3d-2.png" alt="Torch 3D">
+            <img src="pictures/nurealms.png" alt="NuRealms">
+          </div>
+        </div>
         <div class="barthree">
-          <img src="pictures/ai_random.jpg" alt="placeholder">
+          <img src="pictures/ai_random.webp" alt="placeholder">
           <div class="textcontainer">
             <h1 id="future">The Importance of Analytics</h1>
             <p>For startups and small businesses alike it might be tempting to skip setting up Analytics when budgets are tight. However, if you don't start early, you can lose valuable insights on how to grow your company in the future. This article from Entrepreneur explains why.</p>

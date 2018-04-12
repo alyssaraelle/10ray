@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Beon";
-  src: url(../fonts/Beon-Regular.woff2) format('woff2');
+  src: url(../../fonts/Beon-Regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -140,7 +140,7 @@ footer span {
 }
 
 .mobile-logo {
-  width: 110px;
+  width: 90px;
   height: auto;
   float: left;
 }
@@ -149,7 +149,7 @@ footer span {
   float: right;
   text-align: right;
   padding-right: 5vw;
-  margin-top: 8%;
+  margin-top: 15px;
   height: 50px;
   width: auto;
   cursor: pointer;
@@ -356,7 +356,7 @@ footer span {
 }
 
 .empty-space-home {
-  height: 95px;
+  height: 90px;
   width: 100%;
 }
 
@@ -375,7 +375,7 @@ footer span {
 
 .d-bar-container {
   text-align: left;
-  padding-left: 8vw;
+  padding-left: 6vw;
   padding-right: 8vw;
   padding-bottom: 5vw;
 }
@@ -565,6 +565,33 @@ footer span {
 }
 
 /* Section Four */
+
+.barclients {
+  padding: 4%;
+  background-color: rgb(190,180,180);
+  height: 350px;
+}
+
+.client-logos-container {
+  width: 100%;
+  height: 180px;
+  margin-top: 20px;
+}
+
+.barclients h3 {
+  color: rgb(120,120,120);
+  text-align: center;
+  font-size: 2em;
+}
+
+.barclients img {
+  width: 24%;
+  margin: 0 4%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Section Five */
 
 .barthree {
   padding: 6% 4% 0 6%;

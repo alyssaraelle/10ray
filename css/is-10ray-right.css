@@ -58,7 +58,8 @@ h2 {
 }
 
 .s-two-image {
-  margin: 3% 0 0 42%;
+  margin: auto;
+  margin-top: 5%;
   width: 25vh;
   height: 20vh;
 }

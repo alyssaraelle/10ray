@@ -9,8 +9,14 @@
     <meta name="description" content="10Ray provides several services surrounding
     Analytics and Social Media. See what's included in those services here.">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113134634-1"></script>
-    <script src='../js/gtag.js'></script>
-    <script src='../js/amplitude.js'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113134634-1');
+    </script>
   </head>
   <body>
     <header>
@@ -96,7 +102,7 @@
       <div class="services">
           <div class="service" id="analytics-service">
             <h2>Analytics</h2>
-            <p>There are many great comprehensive reporting tools. However, it
+            <p>There are many great comprehensive reporting tools. But it
               helps to know how to set up the tools and what metrics to look for
               once the tools are setup. With the Analytics Service, you get the
               setup of the tool and the setup of multiple dashboards.</p>
